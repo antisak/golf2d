@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://SwingBar.gd" type="Script" id=1]
+[ext_resource path="res://fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+font_data = ExtResource( 2 )
+
+[node name="SwingBar" type="ColorRect"]
+margin_left = 32.0
+margin_top = 512.0
+margin_right = 224.0
+margin_bottom = 528.0
+color = Color( 0.227451, 0.4, 0.858824, 1 )
+script = ExtResource( 1 )
+
+[node name="SweetSpot" type="ColorRect" parent="."]
+margin_left = 144.0
+margin_right = 160.0
+margin_bottom = 16.0
+
+[node name="MoveBar" type="ColorRect" parent="."]
+margin_left = 151.0
+margin_right = 153.0
+margin_bottom = 16.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="MoveBarMarker" type="ColorRect" parent="."]
+visible = false
+margin_left = 151.0
+margin_right = 153.0
+margin_bottom = 16.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Club" type="Label" parent="."]
+margin_left = 64.0
+margin_top = 16.0
+margin_right = 124.0
+margin_bottom = 56.0
+custom_fonts/font = SubResource( 1 )
+text = "1W"
+valign = 1
+
+[node name="Terrain" type="Label" parent="."]
+margin_left = 32.0
+margin_top = -48.0
+margin_right = 162.0
+margin_bottom = -8.0
+custom_fonts/font = SubResource( 1 )
+text = "Fairway"
+align = 1
+valign = 1
